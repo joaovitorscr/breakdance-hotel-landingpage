@@ -1,3 +1,6 @@
+import { Link as LinkRouter } from 'react-router-dom'
+import { Link } from 'react-scroll'
+
 import twitter from '../assets/image/twitter.png'
 import facebook from '../assets/image/facebook.png'
 import youtube from '../assets/image/youtube.png'
@@ -11,16 +14,24 @@ const Footer = () => (
           <nav>
             <ul>
               <li className="mb-5">
-                <a href="#">Home</a>
+                <Link activeClass="active" smooth spy to="home">
+                  <LinkRouter to={'/'}>Home</LinkRouter>
+                </Link>
               </li>
               <li className="mb-5">
-                <a href="#">Services</a>
+                <Link activeClass="active" smooth spy to="services">
+                  <LinkRouter to={'/'}>Services</LinkRouter>
+                </Link>
               </li>
               <li className="mb-5">
-                <a href="#">About us</a>
+                <Link activeClass="active" smooth spy to="about">
+                  <LinkRouter to={'/'}>About</LinkRouter>
+                </Link>
               </li>
               <li className="mb-5">
-                <a href="#">Contact</a>
+                <Link activeClass="active" smooth spy to="contact">
+                  <LinkRouter to={'/'}>Contact</LinkRouter>
+                </Link>
               </li>
             </ul>
           </nav>
