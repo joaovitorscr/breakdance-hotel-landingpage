@@ -7,7 +7,7 @@ import MyRoutes from './routes'
 function App() {
   return (
     <BrowserRouter>
-      <div id="home" className="bg-white">
+      <div id="home" className="bg-neutral-200">
         <MyRoutes />
         <Footer />
       </div>

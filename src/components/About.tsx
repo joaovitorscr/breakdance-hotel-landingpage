@@ -22,14 +22,16 @@ const star = () => (
 )
 
 const About = () => (
-  <section id="about" className="pt-32">
+  <section id="about">
     <div className="bg-zinc-950 text-white">
-      <div className="w-3/4 m-auto flex">
-        <div>
-          <h2 className="uppercase font-bold text-5xl mb-4 pt-36">About Us</h2>
-          <div className="bg-orange-500 h-1 w-44 rounded-sm" />
-          <div className="max-w-sm pb-9 text-neutral-700 font-medium">
-            <p className="pt-9">
+      <div className="w-3/4 m-auto">
+        <div className="flex flex-col justify-center mb-10">
+          <h2 className="uppercase font-bold text-4xl mb-4 pt-36 text-center">
+            About Us
+          </h2>
+          <div className="bg-orange-500 h-1 w-full rounded-sm" />
+          <div className="max-w-sm pb-9 text-neutral-700 font-medium lg:max-w-lg">
+            <p className="pt-9 ">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequatduis enim.
             </p>
@@ -37,11 +39,11 @@ const About = () => (
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
             </p>
           </div>
-          <button className="bg-orange-500 py-4 px-12 rounded-full mb-36">
+          <button className="bg-orange-500 py-4 px-12 rounded-full">
             Explore
           </button>
         </div>
-        <div className="ml-80">
+        <div className="pb-10">
           <img
             src={aboutUsImg}
             alt="Restaurant with chairs and a lot of natural light"
@@ -49,9 +51,10 @@ const About = () => (
         </div>
       </div>
     </div>
-    <div className="bg-white text-zinc-800 relative">
-      <div className="w-3/4 m-auto flex">
-        <div className="max-w-sm mt-56">
+
+    <div className="text-zinc-800 mt-8">
+      <div className="w-3/4 m-auto">
+        <div className="flex flex-col justify-center">
           <h2 className="uppercase font-bold text-3xl mb-7">
             Classic rooms and interior
           </h2>
@@ -70,40 +73,51 @@ const About = () => (
             src={reviewAboutUs}
             alt="Persons who reviewed our hotel"
           />
-          <p className="mt-5 mb-28 text-gray-500 font-medium text-lg">
+          <p className="mt-5 text-gray-500 font-medium text-lg lg:text-sm">
             Peoples successsfully got this dream place
           </p>
         </div>
-        <div className="grid grid-cols-2 gap-10 absolute -top-10 right-96 mr-20">
-          <div className="bg-white shadow-md px-5 py-10 h-60 w-80">
-            <img src={coffe} alt="Coffe image" />
-            <h3 className="uppercase font-semibold text-xl mt-4">Restaurant</h3>
-            <p className="mt-4 font-medium text-sm text-gray-500">
+
+        <div className="grid grid-cols-2 gap-2 mt-10 mb-10">
+          <div className="bg-white shadow-md py-2">
+            <div className="flex flex-col items-center">
+              <img className="w-10" src={coffe} alt="Coffe image" />
+              <h3 className="uppercase font-semibold text-xs mt-4">
+                Restaurant
+              </h3>
+            </div>
+            <p className="mt-4 font-medium text-xs text-gray-500 text-center">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
             </p>
           </div>
-          <div className="bg-white shadow-md px-5 py-10 h-60 w-80">
-            <img src={spa} alt="Coffe image" />
-            <h3 className="uppercase font-semibold text-xl mt-4">
-              SPA & WELLNESS
-            </h3>
-            <p className="mt-4 font-medium text-sm text-gray-500">
+          <div className="bg-white shadow-md py-2">
+            <div className="flex flex-col items-center">
+              <img className="w-10" src={spa} alt="Coffe image" />
+              <h3 className="uppercase font-semibold text-xs mt-4">SPA</h3>
+            </div>
+            <p className="mt-4 font-medium text-xs text-gray-500 text-center">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
             </p>
           </div>
-          <div className="bg-white shadow-md px-5 py-10 h-60 w-80">
-            <img src={leaf} alt="Coffe image" />
-            <h3 className="uppercase font-semibold text-xl mt-4">
-              THE BEST ROOMS
-            </h3>
-            <p className="mt-4 font-medium text-sm text-gray-500">
+          <div className="bg-white shadow-md py-2">
+            <div className="flex flex-col items-center">
+              <img className="w-10" src={leaf} alt="Coffe image" />
+              <h3 className="uppercase font-semibold text-xs mt-4">
+                THE BEST ROOMS
+              </h3>
+            </div>
+            <p className="mt-4 font-medium text-xs text-gray-500 text-center">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
             </p>
           </div>
-          <div className="bg-white shadow-md px-5 py-10 h-60 w-80">
-            <img src={bar} alt="Coffe image" />
-            <h3 className="uppercase font-semibold text-xl mt-4">LOUNGE BAR</h3>
-            <p className="mt-4 font-medium text-sm text-gray-500">
+          <div className="bg-white shadow-md py-2">
+            <div className="flex flex-col items-center">
+              <img className="w-10" src={bar} alt="Coffe image" />
+              <h3 className="uppercase font-semibold text-xs mt-4">
+                LOUNGE BAR
+              </h3>
+            </div>
+            <p className="mt-4 font-medium text-xs text-gray-500 text-center">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
             </p>
           </div>

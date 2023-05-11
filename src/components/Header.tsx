@@ -1,32 +1,34 @@
+import { Link } from 'react-router-dom'
+
 const Header = () => (
-  <header id="home" className="pt-14 bg-zinc-950 text-white ">
+  <header id="home" className="bg-zinc-950 text-white pt-5 pb-5">
     <div className="w-3/4 m-auto">
-      <div className="mt-20 pb-28 flex justify-between">
+      <div className="flex flex-col">
         <div>
-          <h2 className="font-bold text-5xl max-w-xl uppercase">
+          <h2 className="font-bold uppercase text-xl text-center">
             Open the door for a spacious living
           </h2>
         </div>
-        <div className="w-60">
+        <div className="text-sm mt-3 m-auto">
           <div>
-            <a href="#" className="flex items-center">
+            <Link className="flex items-center" to={'/booking'}>
               Book a hotel service
               <span className="pl-16">{arrow()}</span>
-            </a>
+            </Link>
           </div>
           <div className="border-t pt-2" />
           <div>
-            <a href="#" className="flex items-center">
+            <Link className="flex items-center" to={'/booking'}>
               Book a hotel service
               <span className="pl-16">{arrow()}</span>
-            </a>
+            </Link>
           </div>
           <div className="border-t pt-2" />
           <div>
-            <a href="#" className="flex items-center">
+            <Link className="flex items-center" to={'/booking'}>
               Book a hotel service
               <span className="pl-16">{arrow()}</span>
-            </a>
+            </Link>
           </div>
           <div className="border-t pt-2" />
         </div>

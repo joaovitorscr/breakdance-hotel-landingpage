@@ -2,9 +2,9 @@ import { Link as LinkRouter } from 'react-router-dom'
 import { Link } from 'react-scroll'
 
 const NavBar = () => (
-  <div className="bg-zinc-950 pt-14 pb-4 text-white sticky top-0 z-10 ">
-    <div className="flex justify-between items-center w-3/4 m-auto">
-      <h1>
+  <div className="bg-zinc-950 text-white sticky top-0 z-10 pt-10">
+    <div className="w-3/4 m-auto flex flex-col">
+      <h1 className="flex justify-center mb-5">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="100"
@@ -17,29 +17,24 @@ const NavBar = () => (
           />
         </svg>
       </h1>
-      <nav className="flex items-center font-medium">
+      <nav className="text-xs">
         <ul className="flex">
-          <li className="mr-11">
-            <Link activeClass="active" smooth spy to="home">
-              Home
-            </Link>
-          </li>
-          <li className="mr-11">
+          <li className="mr-5">
             <Link activeClass="active" smooth spy to="services">
               Services
             </Link>
           </li>
-          <li className="mr-11">
+          <li className="mr-5">
             <Link activeClass="active" smooth spy to="room">
               Room
             </Link>
           </li>
-          <li className="mr-11">
+          <li className="mr-5">
             <Link activeClass="active" smooth spy to="about">
-              About us
+              About
             </Link>
           </li>
-          <li className="mr-11">
+          <li className="mr-5">
             <Link activeClass="active" smooth spy to="contact">
               Contact
             </Link>
@@ -48,7 +43,7 @@ const NavBar = () => (
       </nav>
       <LinkRouter
         to={'/booking'}
-        className="py-4 px-12 font-semibold border-white border-2"
+        className="mt-5 mb-2 py-1 px-1 font-semibold border-white border m-auto"
       >
         Book Now
       </LinkRouter>
