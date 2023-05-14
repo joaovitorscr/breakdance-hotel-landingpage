@@ -2,9 +2,9 @@ import { Link as LinkRouter } from 'react-router-dom'
 import { Link } from 'react-scroll'
 
 const NavBar = () => (
-  <div className="bg-zinc-950 text-white sticky top-0 z-10 pt-10">
-    <div className="w-3/4 m-auto flex flex-col">
-      <h1 className="flex justify-center mb-5">
+  <div className="bg-zinc-950 text-white sticky top-0 z-10 pt-10 pb-10">
+    <div className="w-3/4 m-auto flex flex-col  md:flex-row md:">
+      <h1 className="flex justify-center mb-5 md:mb-0">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="100"
@@ -17,24 +17,24 @@ const NavBar = () => (
           />
         </svg>
       </h1>
-      <nav className="text-xs">
+      <nav className="text-xs m-auto lg:text-lg xl:text-xl">
         <ul className="flex">
-          <li className="mr-5">
-            <Link activeClass="active" smooth spy to="services">
+          <li className="mr-5 cursor-pointer hover:text-neutral-300 hover:underline underline-offset-8">
+            <Link activeClass="active" smooth spy to="services" offset={-165}>
               Services
             </Link>
           </li>
-          <li className="mr-5">
-            <Link activeClass="active" smooth spy to="room">
+          <li className="mr-5 cursor-pointer hover:text-neutral-300 hover:underline underline-offset-8">
+            <Link activeClass="active" smooth spy to="room" offset={-125}>
               Room
             </Link>
           </li>
-          <li className="mr-5">
+          <li className="mr-5 cursor-pointer hover:text-neutral-300 hover:underline underline-offset-8">
             <Link activeClass="active" smooth spy to="about">
               About
             </Link>
           </li>
-          <li className="mr-5">
+          <li className="cursor-pointer hover:text-neutral-300 hover:underline underline-offset-8">
             <Link activeClass="active" smooth spy to="contact">
               Contact
             </Link>
@@ -43,7 +43,7 @@ const NavBar = () => (
       </nav>
       <LinkRouter
         to={'/booking'}
-        className="mt-5 mb-2 py-1 px-1 font-semibold border-white border m-auto"
+        className="mt-5 mb-2 py-1 px-1 font-semibold border-white border hover:text-neutral-300 hover:border-neutral-400 md:mb-0 md:mt-0 lg:text-xl"
       >
         Book Now
       </LinkRouter>

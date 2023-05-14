@@ -7,8 +7,8 @@ import mediumRoom from '../assets/image/mediumRoom.png'
 const Room = () => (
   <section id="room" className="mb-24 w-3/4 m-auto">
     <div className="text-center text-zinc-800">
-      <h3 className="font-bold text-xl">Our Room</h3>
-      <h2 className="font-bold text-3xl mt-4">
+      <h3 className="font-bold text-xl lg:text-3xl">Our Room</h3>
+      <h2 className="font-bold text-3xl mt-4 lg:text-5xl">
         A World of <span className="text-orange-500">Choice</span>
       </h2>
       <p className="mt-5 text-md font-medium text-gray-500 max-w-md m-auto">
@@ -16,16 +16,16 @@ const Room = () => (
         sint. Velit officia consequat.
       </p>
     </div>
-    <div className="mt-11">
-      <div className="">
-        <img className="mb-6" src={roomWithView} alt="" />
+    <div className="mt-11 md:flex lg:justify-center">
+      <div>
+        <img className="pb-6" src={roomWithView} alt="" />
         <img src={smallRoom} alt="" />
       </div>
-      <div className="mb-6">
-        <img src={luxuryRoom} alt="" />
+      <div className="">
+        <img className="lg:px-6" src={luxuryRoom} alt="" />
       </div>
       <div className="">
-        <img className="mb-6" src={mediumRoom} alt="" />
+        <img className="pb-6" src={mediumRoom} alt="" />
         <img src={appartment} alt="" />
       </div>
     </div>

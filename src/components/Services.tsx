@@ -1,12 +1,6 @@
-import banner from '../assets/image/heroBanner.png'
-import services from '../assets/image/services.png'
-import user1 from '../assets/image/user1.png'
-import user2 from '../assets/image/user2.png'
-import user3 from '../assets/image/user3.png'
-
 const Services = () => (
   <section id="services" className="w-3/4 m-auto mt-12 mb-24 ">
-    <ul className="grid grid-cols-2 gap-10 text-sm text-gray-500 font-medium">
+    <ul className="grid grid-cols-2 gap-10 text-sm text-gray-500 font-medium md:flex lg:text-lg">
       <li className="m-auto text-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -87,86 +81,56 @@ const Services = () => (
         </span>
       </li>
     </ul>
-
     <div className="mt-36 text-center">
-      <h2 className="font-bold text-3xl text-zinc-800">
-        Why You Should <span className="text-orange-500">Stay Here</span>
+      <h2 className="font-bold text-3xl text-zinc-800 lg:text-5xl lg:flex lg:flex-col">
+        Why You Should{' '}
+        <span className="text-orange-500 lg:mt-3">Stay Here</span>
       </h2>
-      <p className="font-medium pt-4 text-zinc-400 text-sm">
+      <p className="font-medium pt-4 text-zinc-400 text-sm lg:text-lg">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat.
       </p>
     </div>
     <div className="mt-20">
-      <div className="mb-16 flex flex-col text-center">
-        <div className="flex justify-center items-center bg-orange-500 w-16 h-16 rounded-half m-auto">
-          <p className="text-white font-semibold text-2xl">1</p>
-        </div>
-        <h3 className="text-zinc-800 font-bold mt-6 text-2xl">
-          Provide the best choice of Room
-        </h3>
-        <p className="text-zinc-400 font-medium mt-3">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat.
-        </p>
-      </div>
-      <div className="mb-16 flex flex-col text-center">
-        <div className="flex justify-center items-center bg-orange-500 w-16 h-16 rounded-half m-auto">
-          <p className="text-white font-semibold text-2xl">2</p>
-        </div>
-        <h3 className="text-zinc-800 font-bold mt-6 text-2xl">
-          Provide the best choice of Room
-        </h3>
-        <p className="text-zinc-400 font-medium mt-3">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat.
-        </p>
-      </div>
-      <div className="mb-16 flex flex-col text-center">
-        <div className="flex justify-center items-center bg-orange-500 w-16 h-16 rounded-half m-auto">
-          <p className="text-white font-semibold text-2xl">3</p>
-        </div>
-        <h3 className="text-zinc-800 font-bold mt-6 text-2xl">
-          Provide the best choice of Room
-        </h3>
-        <p className="text-zinc-400 font-medium mt-3">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat.
-        </p>
-      </div>
-      <div
-        className="w-full h-96 block bg-cover relative"
-        style={{ backgroundImage: `url(${services})` }}
-      >
-        <img className="pt-36" src={banner} alt="banner" />
-        <div className="absolute top-5 left-5">
-          <div className="bg-white shadow-gray-500 flex items-center rounded-md w-48">
-            <img className="py-3 px-3" src={user2} alt="Person picture" />
-            <div className="">
-              <h4 className="text-zinc-800 font-bold text-sm">Cody Fischer</h4>
-              <p className="text-gray-400 text-sm">
-                give rating <span className="text-orange-500">4.5</span>
-              </p>
+      <div>
+        <div className="grid-cols-2 md:grid md:gap-20">
+          <div className="mb-16 flex flex-col text-center">
+            <div className="flex justify-center items-center bg-orange-500 w-16 h-16 rounded-half m-auto">
+              <p className="text-white font-semibold text-2xl">1</p>
             </div>
+            <h3 className="text-zinc-800 font-bold mt-6 text-2xl">
+              Provide the best choice of Room
+            </h3>
+            <p className="text-zinc-400 font-medium mt-3">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat.
+            </p>
           </div>
-          <div className="bg-white shadow-gray-500 flex items-center rounded-md w-48 mt-20">
-            <img className="py-3 px-3" src={user1} alt="Person picture" />
-            <div className="">
-              <h4 className="text-zinc-800 font-bold text-sm">Robert Flores</h4>
-              <p className="text-gray-400 text-sm">
-                give rating <span className="text-orange-500">4.5</span>
-              </p>
+          <div className="mb-16 flex flex-col text-center">
+            <div className="flex justify-center items-center bg-orange-500 w-16 h-16 rounded-half m-auto">
+              <p className="text-white font-semibold text-2xl">2</p>
             </div>
+            <h3 className="text-zinc-800 font-bold mt-6 text-2xl">
+              Provide the best choice of Room
+            </h3>
+            <p className="text-zinc-400 font-medium mt-3">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat.
+            </p>
           </div>
-          <div className="bg-white shadow-gray-500 flex items-center rounded-md w-48 mt-20">
-            <img className="py-3 px-3" src={user3} alt="Person picture" />
-            <div className="">
-              <h4 className="text-zinc-800 font-bold text-sm">Devon Lane</h4>
-              <p className="text-gray-400 text-sm">
-                give rating <span className="text-orange-500">4.5</span>
-              </p>
-            </div>
+        </div>
+
+        <div className="mb-16 flex flex-col text-center">
+          <div className="flex justify-center items-center bg-orange-500 w-16 h-16 rounded-half m-auto">
+            <p className="text-white font-semibold text-2xl">3</p>
           </div>
+          <h3 className="text-zinc-800 font-bold mt-6 text-2xl">
+            Provide the best choice of Room
+          </h3>
+          <p className="text-zinc-400 font-medium mt-3">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat.
+          </p>
         </div>
       </div>
     </div>

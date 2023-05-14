@@ -23,14 +23,14 @@ const star = () => (
 
 const About = () => (
   <section id="about">
-    <div className="bg-zinc-950 text-white">
-      <div className="w-3/4 m-auto">
-        <div className="flex flex-col justify-center mb-10">
-          <h2 className="uppercase font-bold text-4xl mb-4 pt-36 text-center">
+    <div className="bg-zinc-950 text-white pt-36">
+      <div className="w-3/4 m-auto md:grid md:grid-cols-2 md:gap-10">
+        <div className="flex flex-col justify-center mb-10 lg:pr-56">
+          <h2 className="uppercase font-bold text-4xl mb-4 text-center md:text-2xl">
             About Us
           </h2>
           <div className="bg-orange-500 h-1 w-full rounded-sm" />
-          <div className="max-w-sm pb-9 text-neutral-700 font-medium lg:max-w-lg">
+          <div className="pb-9 text-neutral-700 font-medium">
             <p className="pt-9 ">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequatduis enim.
@@ -39,12 +39,13 @@ const About = () => (
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
             </p>
           </div>
-          <button className="bg-orange-500 py-4 px-12 rounded-full">
+          <button className="bg-orange-500 py-4 rounded-full md:py-2">
             Explore
           </button>
         </div>
-        <div className="pb-10">
+        <div>
           <img
+            className="pb-20 lg:mb-20"
             src={aboutUsImg}
             alt="Restaurant with chairs and a lot of natural light"
           />
@@ -52,37 +53,37 @@ const About = () => (
       </div>
     </div>
 
-    <div className="text-zinc-800 mt-8">
-      <div className="w-3/4 m-auto">
-        <div className="flex flex-col justify-center">
+    <div className="text-zinc-800 mt-8 mb-8">
+      <div className="w-3/4 m-auto md:flex">
+        <div className="flex flex-col justify-center md:mr-20">
           <h2 className="uppercase font-bold text-3xl mb-7">
             Classic rooms and interior
           </h2>
-          <div className="flex mb-2">
+          <div className="flex mb-2 md:mb-4">
             <span className="mr-2">{star()}</span>
             <span className="mr-2">{star()}</span>
             <span className="mr-2">{star()}</span>
             <span className="mr-2">{star()}</span>
             <span className="mr-2">{star()}</span>
           </div>
-          <p className="text-gray-500 font-medium text-lg">
+          <p className="text-gray-500 font-medium text-lg md:mb-5">
             Excellent 5k+ reviews
           </p>
           <img
-            className="mt-20"
+            className="w-48"
             src={reviewAboutUs}
             alt="Persons who reviewed our hotel"
           />
-          <p className="mt-5 text-gray-500 font-medium text-lg lg:text-sm">
+          <p className="mt-5 text-gray-500 font-medium text-lg md:text-sm lg:text-lg">
             Peoples successsfully got this dream place
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-2 mt-10 mb-10">
-          <div className="bg-white shadow-md py-2">
+        <div className="grid grid-cols-2 gap-2 mt-10 mb-10 md:gap-4 lg:gap-5">
+          <div className="bg-white shadow-md py-2 md:p-2 lg:p-6">
             <div className="flex flex-col items-center">
-              <img className="w-10" src={coffe} alt="Coffe image" />
-              <h3 className="uppercase font-semibold text-xs mt-4">
+              <img className="w-10 lg:w-16" src={coffe} alt="Coffe image" />
+              <h3 className="uppercase font-semibold text-xs mt-4 lg:text-lg">
                 Restaurant
               </h3>
             </div>
@@ -90,19 +91,21 @@ const About = () => (
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
             </p>
           </div>
-          <div className="bg-white shadow-md py-2">
+          <div className="bg-white shadow-md py-2 lg:p-6">
             <div className="flex flex-col items-center">
-              <img className="w-10" src={spa} alt="Coffe image" />
-              <h3 className="uppercase font-semibold text-xs mt-4">SPA</h3>
+              <img className="w-10 lg:w-16" src={spa} alt="Coffe image" />
+              <h3 className="uppercase font-semibold text-xs mt-4 lg:text-lg">
+                SPA
+              </h3>
             </div>
             <p className="mt-4 font-medium text-xs text-gray-500 text-center">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
             </p>
           </div>
-          <div className="bg-white shadow-md py-2">
+          <div className="bg-white shadow-md py-2 lg:p-6">
             <div className="flex flex-col items-center">
-              <img className="w-10" src={leaf} alt="Coffe image" />
-              <h3 className="uppercase font-semibold text-xs mt-4">
+              <img className="w-10 lg:w-16" src={leaf} alt="Coffe image" />
+              <h3 className="uppercase font-semibold text-xs mt-4 lg:text-lg">
                 THE BEST ROOMS
               </h3>
             </div>
@@ -110,10 +113,10 @@ const About = () => (
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
             </p>
           </div>
-          <div className="bg-white shadow-md py-2">
+          <div className="bg-white shadow-md py-2 lg:p-6">
             <div className="flex flex-col items-center">
-              <img className="w-10" src={bar} alt="Coffe image" />
-              <h3 className="uppercase font-semibold text-xs mt-4">
+              <img className="w-10 lg:w-16" src={bar} alt="Coffe image" />
+              <h3 className="uppercase font-semibold text-xs mt-4 lg:text-lg">
                 LOUNGE BAR
               </h3>
             </div>
